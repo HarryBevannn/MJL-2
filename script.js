@@ -1,2 +1,5 @@
-console.log("Welcome to My Website!");
-alert("Hello! This is your website in progress.");
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from refreshing the page
+    alert('Thank you for your message!');
+});

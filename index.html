@@ -3,12 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <title>MJL Carpentry - Birmingham</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first web page using Git and VS Code!</p>
-    <script src="script.js"></script> <!-- Link to your JavaScript -->
+    <header>
+        <div class="container">
+            <h1>MJL Carpentry</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Expert Carpentry Services in Birmingham</h2>
+            <p>High-quality craftsmanship tailored to your needs. From bespoke furniture to home renovations, MJL Carpentry delivers excellence in every project.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>MJL Carpentry is a Birmingham-based company with years of experience in delivering top-notch carpentry solutions. Whether you're looking for custom furniture, kitchen fittings, or home renovations, our team ensures precision and quality in every project.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-list">
+                    <div class="service">
+                        <h3>Bespoke Furniture</h3>
+                        <p>Custom-built furniture designed to fit your style and space.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Home Renovations</h3>
+                        <p>Transform your living spaces with expert carpentry solutions.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Kitchen Fittings</h3>
+                        <p>Tailored kitchen installations for functionality and aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We’d love to discuss your next project. Reach out to us using the information below:</p>
+                <ul class="contact-info">
+                    <li><strong>Email:</strong> <a href="mailto:MJL@TEST.COM">MJL@TEST.COM</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+441234567890">+44 123 456 7890</a></li>
+                </ul>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MJL Carpentry. All rights reserved. | Based in Birmingham, UK</p>
+    </footer>
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
+
